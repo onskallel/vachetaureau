@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #daa8b8;
+}
+
+h1 {
+    color: #d72b47;
+    font-family: 'lora', sans-serif;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: #333;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.btn-jouer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d72b47;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-jouer:hover {
+    background-color: #bb2240;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #d72b47;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #d72b47;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bb2240;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px; /* Ajustez la largeur maximale selon vos besoins */
+    margin-top: 20px;
+}
+
+
+
+#win-image,
+#win-image-2,
+#lose-image,
+#lose-image-2 {
+    display: block; /* Les images seront affichées si elles sont sélectionnées */
+}
+
+#win-image {
+    display: none;
+}
+
+#win-image-2 {
+    display: none;
+}
+
+#lose-image {
+    display: none;
+}
+
+#lose-image-2 {
+    display: none;
+    height: 430px;
+    position: relative;
+    top: 50px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+.hidden {
+    display: none;
+}
+
+#main .image-taureau {
+    position: absolute;
+    left: 50px; /* Ajustez pour déplacer l'image du taureau vers la droite */
+    top: 100px; /* Déplace l'image du taureau vers le bas */
+    transform: translateX(-50px); /* Ajustez pour rapprocher plus à gauche si nécessaire */
+    width: 500px; /* Agrandit l'image du taureau */
+    height: 600px; /* Agrandit l'image du taureau */
+}
+
+#main .image-vache {
+    position: absolute;
+    right: 0; /* Positionne l'image de la vache à droite */
+    top: 100px; /* Déplace l'image de la vache vers le bas */
+    transform: translateX(50px); /* Ajustez pour rapprocher plus à droite si nécessaire */
+    width: 500px; /* Agrandit l'image de la vache */
+    height: 600px; /* Agrandit l'image de la vache */
+}

@@ -1,0 +1,39 @@
+
+/* Style du bouton "Jouer" */
+
+.btn-jouer {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #14a3d7; /* Couleur verte */
+    border-radius: 50px; /* Bords arrondis */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+/* Effet lors du survol (hover) */
+.btn-jouer:hover {
+    background-color: #459aa0; /* Changement de couleur au survol */
+    transform: scale(1.1); /* Effet de zoom */
+}
+
+/* Effet lors du clic (active) */
+.btn-jouer:active {
+    background-color: #3e868e;
+    transform: scale(0.95); /* Légère réduction lorsqu'on clique */
+}
+h1{
+    font-family: 'Lora', sans-serif; /* Utilise la police Roboto */
+    font-size: 70px;
+    color: #db143f;
+    text-align: center;
+    margin: 20px 0;}
+h2 {
+        font-family: 'Lora', serif; /* Utilise la police Lora */
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        margin: 5px 0;
+    }    

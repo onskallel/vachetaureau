@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vache et Taureau</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora:wght@400&display=swap">
+    <link rel="stylesheet" href="file.css">
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #daa8b8;
+        }
+        h1 {
+            color: #d72b47;
+        }
+        .hidden {
+            display: none;
+        }
+        .logo, .logo-top-right {
+            position: fixed;
+            z-index: 1000;
+            width: 100px;
+            height: auto;
+        }
+        .logo {
+            bottom: 0;
+            left: 0;
+        }
+        .logo-top-right {
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cntr1">
+        <h1>Vache et Taureau</h1>
+        <h2>Clique sur le bouton pour jouer.</h2>
+        <div class="container">
+            <a href="#" class="btn-jouer" onclick="event.preventDefault(); startGame();">Jouer 🎮 </a>
+        </div>
+
+        <img src="image_2024-09-10_195608593-removebg-preview.png" alt="taureau" class="image-move-left" width="400" height="500">
+        <img src="vache_grand-removebg-preview.png" alt="vache" class="image-move-right" width="400" height="500">
+    </div>
+
+    <div id="main" class="hidden">
+        <h2>Jouez au jeu !</h2>
+        <p>Entrez votre estimation et trouvez le code secret !</p>
+        <input type="text" id="guessInput" placeholder="Entrez 4 chiffres" maxlength="4">
+        <button onclick="playbullsandcows()">Soumettre une estimation</button>
+        <button onclick="giveUp()">J'abandonne</button>
+        <p>Taureaux 🐂: <span id="bulls">0</span></p>
+        <p>Vaches 🐄: <span id="cows">0</span></p>
+        <p>Essais Restants : <span id="chance">10</span></p>
+        <h3>Essais :</h3>
+        <ul id="attempts"></ul>
+        <p id="error" style="color: red; display: none;">Erreur : Vous avez déjà essayé ce nombre.</p>
+        <img src="image_2024-09-10_195608593-removebg-preview.png" alt="taureau" class="image-taureau" width="500" height="600">
+        <img src="vache_grand-removebg-preview.png" alt="vache" class="image-vache" width="500" height="600">
+    </div>
+
+    <div id="result" class="hidden">
+        <!-- Messages de victoire et de perte -->
+        <p id="turn"> asmaaaa</p>
+        <p id="win" style="display: none; color: green;">Vous avez gagné !🎉</p>
+        <p id="lose" style="display: none; color: red;">Vous avez perdu !</p>
+        
+        <!-- Images pour la victoire et la perte -->
+        <div id="result-images">
+             <img id="win-image" src="5c1dd1d7-f9b9-4f0c-a4db-cdd76e724e45-removebg-preview.png" alt="victoire" class="hidden" width="400" height="500">
+            <img id="win-image-2" src="b688bf96-30fb-434c-ac24-264e72ec93ee-removebg-preview.png" alt="victoire 2" class="hidden" width="400" height="500">
+            <img id="lose-image" src="7d381a0d-ffab-4aa7-bd25-646af6cce757-removebg-preview.png" alt="perte" class="hidden" width="500" height="500">
+            <img id="lose-image-2" src="bdc48e4e-c273-49e1-b2a5-18086609c228-removebg-preview.png" alt="défaite 2"  >
+        </div>
+
+        <button onclick="returnToHome()">Retour à l'accueil 🔙 </button>
+    </div>
+    
+
+    <!-- Logo en bas à gauche -->
+    <img src="Capture_d_écran_2024-09-12_131649-removebg-preview.png" alt="logo" class="logo">
+
+    <!-- Petit logo en haut à droite -->
+    <img src="Capture_d_écran_2024-09-12_131649-removebg-preview.png" alt="logo" class="logo-top-right">
+
+    <script src="script.js"></script>
+</body>
+</html>
