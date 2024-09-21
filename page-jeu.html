@@ -15,6 +15,9 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #daa8b8;
+            width: 100vw;  /* 100% de la largeur de l'écran */
+            height: 100vh; /* 100% de la hauteur de l'écran */
+            overflow: hidden; /* Empêche le défilement si le contenu dépasse */
         }
         h1 {
             color: #d72b47;
@@ -46,8 +49,8 @@
             <a href="#" class="btn-jouer" onclick="event.preventDefault(); startGame();">Jouer 🎮 </a>
         </div>
 
-        <img src="image_2024-09-10_195608593-removebg-preview.png" alt="taureau" class="image-move-left" width="400" height="500">
-        <img src="vache_grand-removebg-preview.png" alt="vache" class="image-move-right" width="400" height="500">
+        <img src="image_2024-09-10_195608593-removebg-preview.png" alt="taureau" class="image-move-left" width="400" height="430">
+        <img src="vache_grand-removebg-preview.png" alt="vache" class="image-move-right" width="400" height="430">
     </div>
 
     <div id="main" class="hidden">
@@ -76,7 +79,7 @@
         <div id="result-images">
              <img id="win-image" src="5c1dd1d7-f9b9-4f0c-a4db-cdd76e724e45-removebg-preview.png" alt="victoire" class="hidden" width="400" height="500">
             <img id="win-image-2" src="b688bf96-30fb-434c-ac24-264e72ec93ee-removebg-preview.png" alt="victoire 2" class="hidden" width="400" height="500">
-            <img id="lose-image" src="7d381a0d-ffab-4aa7-bd25-646af6cce757-removebg-preview.png" alt="perte" class="hidden" width="500" height="500">
+            <img id="lose-image" src="6919d46f-f54a-4295-9ac0-2f48320fc74d-removebg-preview.png" alt="perte" class="hidden" width="500" height="500">
             <img id="lose-image-2" src="bdc48e4e-c273-49e1-b2a5-18086609c228-removebg-preview.png" alt="défaite 2"  >
         </div>
 
